@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zubair Hamed — QA Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #f7f5f2;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --accent: #2563eb;
+      --accent-light: #dbeafe;
+      --border: #e5e2dd;
+      --radius: 12px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    header {
+      padding: 60px 0 48px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 56px;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .name {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.4rem, 6vw, 3.4rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      color: var(--muted);
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+
+    .tagline span {
+      display: inline-block;
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 52px;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    section:nth-child(2) { animation-delay: 0.1s; }
+    section:nth-child(3) { animation-delay: 0.2s; }
+    section:nth-child(4) { animation-delay: 0.3s; }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+
+    p {
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    /* ── Card style for bullet sections ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.97rem;
+      color: #333;
+    }
+
+    ul li::before {
+      content: '→';
+      color: var(--accent);
+      font-size: 0.85rem;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    /* ── Footer ── */
+    footer {
+      margin-top: 72px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-align: center;
+      animation: fadeUp 0.6s ease 0.4s both;
+    }
+
+    /* ── Animation ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1 class="name">Zubair Hamed</h1>
+      <p class="tagline">
+        <span>QA Engineer</span>
+        AI-Driven Quality Engineering · Building smarter testing tools
+      </p>
+    </header>
+
+    <section>
+      <p class="section-label">About</p>
+      <h2>About Me</h2>
+      <p>
+        I'm a Quality Engineer with a passion for building robust, reliable software. 
+        I'm currently exploring how AI can transform the way we approach testing — from 
+        smarter test generation to intelligent defect analysis. I believe quality isn't 
+        just a phase in the process; it's a mindset built into every step.
+      </p>
+    </section>
+
+    <section>
+      <p class="section-label">Learning</p>
+      <h2>What I'm Exploring</h2>
+      <div class="card">
+        <ul>
+          <li>Using AI/LLMs to generate and improve test cases automatically</li>
+          <li>Prompt engineering for QA workflows and documentation</li>
+          <li>AI-assisted root cause analysis and defect triage</li>
+          <li>Building personal tools that integrate AI into day-to-day QA work</li>
+          <li>How other engineers are adopting AI across the SDLC</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <p class="section-label">Work</p>
+      <h2>Current Projects</h2>
+      <div class="card">
+        <ul>
+          <li>Personal portfolio website — this one! (always a work in progress)</li>
+          <li>Experimenting with AI tools to speed up manual testing processes</li>
+          <li>Building a small test automation framework with AI-assisted coverage</li>
+          <li>Documenting my AI + QA learning journey publicly</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      Built by Zubair Hamed &nbsp;·&nbsp; 2026
+    </footer>
+
+  </div>
+</body>
+</html>
